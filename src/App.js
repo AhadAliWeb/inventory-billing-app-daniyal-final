@@ -7,6 +7,7 @@ import SimpleBillingSystem from './components/SimpleBillingSystem';
 import Administration from './components/Administration';
 import Login from './components/Login';
 import Navigation from './components/Navigation';
+import BillingHistory from './components/BillingHistory';
 
 function App() {
   const [currentView, setCurrentView] = useState('login');
@@ -48,6 +49,8 @@ function App() {
         return <SimpleBillingSystem />;
       case 'administration':
         return <Administration />;
+      case 'billingHistory':
+        return <BillingHistory />
       default:
         return <Dashboard onViewChange={setCurrentView} />;
     }

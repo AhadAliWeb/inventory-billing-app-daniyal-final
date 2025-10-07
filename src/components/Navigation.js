@@ -39,6 +39,12 @@ const Navigation = ({ currentView, onViewChange, onLogout, user }) => {
       description: 'Create Bills & Invoices'
     },
     {
+      id: 'billingHistory',
+      label: 'Billing History',
+      icon: '📜',
+      description: 'View Billing History'
+    },
+    {
       id: 'administration',
       label: 'Administration',
       icon: '⚙️',
